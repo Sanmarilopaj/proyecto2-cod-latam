@@ -62,6 +62,9 @@ ul{
     display: flex;
     align-items: center;
 }
+hr{
+    border: 1px solid #7e0a6e;
+}
 li,a{
     list-style: none;
     position: relative;
@@ -101,6 +104,13 @@ ol{
     font-family: Tahoma, sans-serif;
     margin: auto;
 }
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
 .caja{
     background-color: #7e0a6e;
     border: 6px solid #ec99e1;
@@ -120,12 +130,12 @@ h6{
     font-family: Verdana, sans-serif;
     font-size: 20px;
     line-height: 0;
-    margin: auto;
+    margin: 0;
     padding: auto;
     text-align: center;    
 }
 #contenidos1{
-    text-align: left;
+    text-align: center;
     justify-content: left;
     color: #7e0a6e;
     font-size: 14px;
@@ -142,11 +152,11 @@ h6{
     flex-flow: row wrap;
     justify-content: center;
     margin: 0;
-    padding: 0;
-    text-align: left;
+    padding: auto;
+    text-align: center;
 }
 #contenidos2{
-    text-align: left;
+    text-align: center;
     justify-content: left;
     color: #7e0a6e;
     font-size: 14px;
@@ -162,9 +172,9 @@ h6{
     height: 350px;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+    margin: auto;
+    padding: auto;
+    text-align: center;
 }
 .contacto{
     text-align: center;
