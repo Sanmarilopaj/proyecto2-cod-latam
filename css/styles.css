@@ -70,7 +70,7 @@ li,a{
     margin: 0 50px;
     color: #7e0a6e;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 header a{
     cursor: pointer;
@@ -81,6 +81,19 @@ h1{
     font-family: Tahoma, sans-serif;
     margin: 50px;
     padding: auto 50px;
+}
+h2{
+    text-align: center; color: #7e0a6e;
+    font: size 36px;
+    font-family: Tahoma, sans-serif;
+    margin: 50px;
+    padding: auto 50px;
+}
+ol{
+    color:black;
+    line-height: 1.5;
+    font-size:14px;
+    font-family: Verdana, sans-serif;
 }
 #contenidos{
     text-align:justify; color:black;
@@ -111,26 +124,47 @@ h6{
     padding: auto;
     text-align: center;    
 }
-#contenidos2{
-    text-align: center;
-    justify-content: center;
-    color: black;
-    font-size: 18px;
+#contenidos1{
+    text-align: left;
+    justify-content: left;
+    color: #7e0a6e;
+    font-size: 14px;
     font-family: Verdana, sans-serif;
-    margin: auto;;
-    line-height: 1.2em;
-    padding: 0 auto;
+    margin: 0;
+    line-height: 1em;
+    padding: 0;
 }
 .caja1{
-    border: 4px solid #7e0a6e;
-    background-color: #ec99e1;
-    width: 320px;
-    height: 180px;
-    display: flexbox;
+    border: 3px solid #7e0a6e;
+    background-color: #fcd3f6;
+    width: 300px;
+    height: 350px;
+    flex-flow: row wrap;
     justify-content: center;
-    margin: auto;
+    margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
+}
+#contenidos2{
+    text-align: left;
+    justify-content: left;
+    color: #7e0a6e;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    line-height: 1em;
+    padding: 0;
+}
+.caja2{
+    border: 3px solid #7e0a6e;
+    background-color: #fcd3f6;
+    width: 300px;
+    height: 350px;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
 .contacto{
     text-align: center;
@@ -138,6 +172,17 @@ h6{
     flex-flow: row wrap;
     margin: 20px auto;
     padding: 30px;
+}
+.caja3{
+    border: 3px solid #7e0a6e;
+    background-color: #fcd3f6;
+    width: 320px;
+    height: 180px;
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    text-align: center;
 }
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
@@ -178,6 +223,13 @@ footer{
         margin: 50px;
         padding: auto 50px;
     }
+    h2{
+        text-align: center; color: #7e0a6e;
+        font: size 30px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: center 50px;
+    }
     #contenidos{
         text-align:justify; color:black;
         line-height: 1.2;font: size 28px;
@@ -207,10 +259,10 @@ footer{
         padding: auto;
         text-align: center;    
     }
-    #contenidos2{
+    #contenidos3{
         text-align: center;
         justify-content: center;
-        color: black;
+        color: #7e0a6e;
         font-size: 18px;
         font-family: Verdana, sans-serif;
         margin: auto;;
