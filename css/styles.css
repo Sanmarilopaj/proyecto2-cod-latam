@@ -48,7 +48,7 @@ header{
     justify-content: space-around;
     height: 90px;
     z-index: 10;
-    text-align: center; color: rgb(15, 125, 158);
+    text-align: center; color: #7e0a6e;
     list-style: none;
 }
 nav{
@@ -65,10 +65,10 @@ ul{
 li,a{
     list-style: none;
     position: relative;
-    font-family: "Tahoma";
+    font-family: Tahoma, sans-serif;
     text-decoration: none;
     margin: 0 50px;
-    color: rgb(15, 125, 158);
+    color: #7e0a6e;
     font-weight: bold;
     font-size: 18px;
 }
@@ -76,20 +76,21 @@ header a{
     cursor: pointer;
 }
 h1{
-    text-align: center; color: rgb(15, 125, 158);
+    text-align: center; color: #7e0a6e;
     font: size 36px;
-    font-family: "Tahoma";
+    font-family: Tahoma, sans-serif;
     margin: 50px;
     padding: auto 50px;
 }
 #contenidos{
     text-align:justify; color:black;
     line-height: 1.2;font: size 28px;
-    font-family: "Tahoma";
+    font-family: Tahoma, sans-serif;
     margin: auto;
 }
 .caja{
-    background-color: #48a1ca;
+    background-color: #7e0a6e;
+    border: 6px solid #ec99e1;
     justify-content: justify;
     text-align: center;
     border-radius: 20px;
@@ -97,13 +98,13 @@ h1{
     display: flexbox; 
     flex-flow: row wrap;
     width: 350px;
-    height: 40px;
+    height: 60px;
     padding: auto;
     list-style: none;
 }
 h6{
     color: #fbfbfb;
-    font-family: "Verdana";
+    font-family: Verdana, sans-serif;
     font-size: 20px;
     line-height: 0;
     margin: auto;
@@ -115,14 +116,14 @@ h6{
     justify-content: center;
     color: black;
     font-size: 18px;
-    font-family: "Verdana";
+    font-family: Verdana, sans-serif;
     margin: auto;;
     line-height: 1.2em;
     padding: 0 auto;
 }
 .caja1{
-    border: 2px solid rgb(15, 125, 158);
-    background-color: rgb(132, 213, 238);
+    border: 4px solid #7e0a6e;
+    background-color: #ec99e1;
     width: 320px;
     height: 180px;
     display: flexbox;
@@ -149,22 +150,82 @@ main{
 }
 .imagen{
     display: flex;
-    border-radius: 2000px;
-    margin: 80px auto;
-    padding: 30px;
-    width: 40%;
+    border: 4px solid #7e0a6e;
+    border-radius: 3000px;
+    margin: 100px auto;
+    padding: 5px;
+    width: 35%;
     height: auto;
 }
 footer{
-    height: 90px;
-    background: #278cbb; color: #fbfbfb;
+    background: #7e0a6e; color: #fbfbfb;
     text-align:center;
     max-width: 100%;
     display: flex;
     justify-content: center;
-    font-family: "Verdana";
-    padding: 40px;
-    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    height: 80px;
+    font-size: 14px;
+}
+
+/*nuevo css*/
+@media (min-width: 1024px) {
+    h1{
+        text-align: center; color: #7e0a6e;
+        font: size 36px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: auto 50px;
+    }
+    #contenidos{
+        text-align:justify; color:black;
+        line-height: 1.2;font: size 28px;
+        font-family: Tahoma, sans-serif;
+        margin: auto;
+    }
+    .caja{
+        background-color: #7e0a6e;
+        border: 6px solid #ec99e1;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: auto;
+        padding: auto;
+        text-align: center;    
+    }
+    #contenidos2{
+        text-align: center;
+        justify-content: center;
+        color: black;
+        font-size: 18px;
+        font-family: Verdana, sans-serif;
+        margin: auto;;
+        line-height: 1.2em;
+        padding: 0 auto;
+    }
+    .imagen{
+        display: flex;
+        border: 4px solid #7e0a6e;
+        border-radius: 2500px;
+        margin: 100px auto;
+        padding: 5px;
+        width: 35%;
+        height: auto;
+    }
 }
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
