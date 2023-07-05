@@ -8,20 +8,13 @@
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
 */
-
 body{
     display: block;
-    margin: 10px;
+    margin: 90px;
+    padding: auto;
 }
-@media screen and (max-width:800px){
-    main{
-        width: 100%;
-    }    
-}
-@media screen and (max-width:400px){
-    .contenedor{
-        width: 100%;
-    }
+p{
+    font-size: 20px;
 }
 .contenedor{
     width: 80%;
@@ -30,36 +23,329 @@ body{
     margin: 0 auto;
     overflow: hidden;
 }
-.contenedor{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
+body{
+    height: 100vh;
+    background-color: #FFFFFF;
+    text-align: center;
 }
-.navbar{
-    position: fixed;
-    width: 100%;
-    color: #ec99e1;
-}
-.navbar-contenedor{
+.centrar-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 58px;
 }
-.menu-items{
-    display: flex;
+/*contenedor*/
+#contenedor1{
+    margin: 0;
+    padding: auto;
+    height: 100px;
+    width: 120px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
-.menu-items li{
-    list-style-type:none;
-    margin-left: 1.5rem;
+/*texto*/
+#color{
+    font-size: 20px;
+    font-weight: bold;   
 }
-.menu-items li a{
-    text-decoration: none;
+/*boton*/
+button{
+    font-size: 12px;
     color: #7e0a6e;
+    border-radius: 20px;
+    background-color: #ec99e1;
+    margin: 5px;
+    padding: 3px 5px;
+    border: 2px solid #7e0a6e;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
-.menu-items a:hover{
-    color: #ec99e1;
+button:hover{
+    background-color: #3CEE36;
 }
+@media screen and (max-width:800px){
+    main{
+        width: 100%;
+    }
+    h1{
+        text-align: center; color: #7e0a6e;
+        font: size 36px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: auto 50px;
+    }
+    h2{
+        text-align: center; color: #7e0a6e;
+        font: size 30px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: center 50px;
+    }
+    #contenidos{
+        text-align:justify; color:black;
+        line-height: 1.2;font: size 28px;
+        font-family: Tahoma, sans-serif;
+        margin: auto;
+    }
+    button{
+        font-size: 12px;
+        color: #7e0a6e;
+        border-radius: 20px;
+        background-color: #ec99e1;
+        margin: 5px;
+        padding: 3px 5px;
+        border: 2px solid #7e0a6e;
+        user-select: none;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover{
+        background-color: #3CEE36;
+    }
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: auto;
+        padding: auto;
+        text-align: center;    
+    }
+    .contenedor{
+        width: 80%;
+        min-width: 100vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #contenidos3{
+        text-align: center;
+        justify-content: center;
+        color: #7e0a6e;
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+        margin: auto;
+        line-height: 2em;
+        padding: 0 auto;
+    }
+    .caja{
+        background-color: #7e0a6e;
+        border: 3px solid #ec99e1;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: 0;
+        padding: auto;
+        text-align: center;    
+    }
+    h3.titulomodal{
+        color:#7e0a6e;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        font-family: Verdana, sans-serif;
+    }
+    main{
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #btnModal{
+        background-color: #ec99e1;
+        border: 3px solid #7e0a6e;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    } 
+    
+    .imagen{
+        display: flex;
+        border: 4px solid #7e0a6e;
+        border-radius: 5000px;
+        margin: auto auto;
+        padding: auto;
+        width: 30%;
+        height: auto;
+    }
+    footer{
+        background: #7e0a6e; color: #ec99e1;
+        text-align:center;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, sans-serif;
+        padding: 20px;
+        height: 80px;
+        font-size: 14px;
+    }
+
+
+@media screen and (max-width:400px){
+    .contenedor{
+        width: 100%;
+    }
+    h1{
+        text-align: center; color: #7e0a6e;
+        font: size 36px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: auto 50px;
+    }
+    h2{
+        text-align: center; color: #7e0a6e;
+        font: size 30px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: center 50px;
+    }
+    #contenidos{
+        text-align:justify; color:black;
+        line-height: 1.2;font: size 28px;
+        font-family: Tahoma, sans-serif;
+        margin: auto;
+    }
+    button{
+        font-size: 12px;
+        color: #7e0a6e;
+        border-radius: 20px;
+        background-color: #ec99e1;
+        margin: 5px;
+        padding: 3px 5px;
+        border: 2px solid #7e0a6e;
+        user-select: none;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover{
+        background-color: #3CEE36;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: auto;
+        padding: auto;
+        text-align: center;    
+    }
+    .contenedor{
+        width: 80%;
+        min-width: 100vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #contenidos3{
+        text-align: center;
+        justify-content: center;
+        color: #7e0a6e;
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+        margin: auto;
+        line-height: 2em;
+        padding: 0 auto;
+    }
+    .caja{
+        background-color: #7e0a6e;
+        border: 3px solid #ec99e1;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: 0;
+        padding: auto;
+        text-align: center;    
+    }
+    h3.titulomodal{
+        color:#7e0a6e;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        font-family: Verdana, sans-serif;
+    }
+    main{
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #btnModal{
+        background-color: #ec99e1;
+        border: 3px solid #7e0a6e;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    } 
+    
+    .imagen{
+        display: flex;
+        border: 4px solid #7e0a6e;
+        border-radius: 5000px;
+        margin: auto auto;
+        padding: auto;
+        width: 30%;
+        height: auto;
+    }
+    footer{
+        background: #7e0a6e; color: #ec99e1;
+        text-align:center;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, sans-serif;
+        padding: 20px;
+        height: 80px;
+        font-size: 14px;
+    }
+}
+
 /* Reset */
 *{
     box-sizing: border-box;
@@ -73,11 +359,10 @@ body{
 header{
     position: fixed;
     top: 0;
-    width: 75%;
+    width: 10%;
     display: flex;
     justify-content: space-around;
-    height: 90px;
-    z-index: 10;
+    height: 70px;
     text-align: center; color: #7e0a6e;
     list-style: none;
 }
@@ -85,17 +370,23 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 120px;
+    margin-right: 90px;
 }
 ul{
     position: relative;
     display: flex;
     align-items: center;
 }
-hr{
-    border: 1px solid #7e0a6e;
+li{
+    list-style: none;
+    position: relative;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0 50px;
+    color: #7e0a6e;
+    font-size: 12px;
 }
-li,a{
+a{
     list-style: none;
     position: relative;
     font-family: Tahoma, sans-serif;
@@ -125,7 +416,7 @@ h2{
 ol{
     color:black;
     line-height: 1.5;
-    font-size:14px;
+    font-size:10px;
     font-family: Verdana, sans-serif;
 }
 #contenidos{
@@ -143,7 +434,7 @@ ol{
 }
 .caja{
     background-color: #7e0a6e;
-    border: 6px solid #ec99e1;
+    border: 3px solid #ec99e1;
     justify-content: justify;
     text-align: center;
     border-radius: 20px;
@@ -164,48 +455,108 @@ h6{
     padding: auto;
     text-align: center;    
 }
-#contenidos1{
-    text-align: center;
-    justify-content: left;
-    color: #7e0a6e;
-    font-size: 14px;
+h3.titulomodal{
+    color:#7e0a6e;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     font-family: Verdana, sans-serif;
-    margin: 0;
-    line-height: 1em;
-    padding: 0;
 }
-.caja1{
+#btnModal{
+    background-color: #ec99e1;
     border: 3px solid #7e0a6e;
-    background-color: #fcd3f6;
-    width: 300px;
-    height: 350px;
+    justify-content: justify;
+    text-align: center;
+    border-radius: 20px;
+    margin: 100px auto;
+    display: flexbox; 
     flex-flow: row wrap;
-    justify-content: center;
-    margin: 0;
+    width: 350px;
+    height: 60px;
     padding: auto;
-    text-align: center;
-}
-#contenidos2{
-    text-align: center;
-    justify-content: left;
-    color: #7e0a6e;
-    font-size: 14px;
-    font-family: Verdana, sans-serif;
-    margin: 0;
-    line-height: 1em;
-    padding: 0;
-}
-.caja2{
-    border: 3px solid #7e0a6e;
-    background-color: #fcd3f6;
-    width: 300px;
-    height: 350px;
-    flex-flow: row wrap;
+    list-style: none;
+} 
+.flex-container {
+    display: flex;
+    height: 80px;
     justify-content: center;
-    margin: auto;
-    padding: auto;
-    text-align: center;
+    align-items: center;
+    border-top: 25%;
+    color: #ec99e1;
+    font-size: 20px;
 }
+.flex-item {
+    display: inherit;
+    width:50px;
+    height:50px;
+    margin:5px;
+}
+.flex-item p {
+    width:100%; 
+    text-align:center; 
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; 
+    margin:0; 
+}
+.flex-container.space-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    padding: 3%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/*Modal*/
+.modalContainer {
+        display: none; 
+        position: fixed; 
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+.modalContainer .modal-content {
+        background-color: #ec99e1;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #7e0a6e;
+        border-top: 10px solid #7e0a6e;
+        width: 60%;
+        text-align: left;
+        overflow: visible;
+    }
+
+
+.modalContainer .close {
+        color: #ec99e1;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.list{
+        text-align: left;
+        font-size: 14px;
+        display: inline-block;
+    }
 .contacto{
     text-align: center;
     justify-content: center;
@@ -214,10 +565,10 @@ h6{
     padding: 30px;
 }
 .caja3{
-    border: 3px solid #7e0a6e;
-    background-color: #fcd3f6;
-    width: 320px;
-    height: 180px;
+    border: 2px solid #7e0a6e;
+    background-color: #ec99e1;
+    width: 420px;
+    height: 190px;
     display: flexbox;
     justify-content: center;
     margin: auto;
@@ -243,7 +594,7 @@ main{
     height: auto;
 }
 footer{
-    background: #ec99e1; color: #7e0a6e;
+    background: #7e0a6e; color: #ec99e1;
     text-align:center;
     max-width: 100%;
     display: flex;
@@ -255,15 +606,13 @@ footer{
 }
 
 /*nuevo css*/
-@media screen and (max-width: 980px){
+@media (max-width: 768px){
     body{
         width: 90%;
     }
     header{
         width: 90%;
     }
-}
-@media (min-width: 1024px) {
     h1{
         text-align: center; color: #7e0a6e;
         font: size 36px;
@@ -284,9 +633,50 @@ footer{
         font-family: Tahoma, sans-serif;
         margin: auto;
     }
+    button{
+        font-size: 12px;
+        color: #7e0a6e;
+        border-radius: 20px;
+        background-color: #ec99e1;
+        margin: 5px;
+        padding: 3px 5px;
+        border: 2px solid #7e0a6e;
+        user-select: none;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover{
+        background-color: #3CEE36;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: auto;
+        padding: auto;
+        text-align: center;    
+    }
+    .contenedor{
+        width: 80%;
+        min-width: 100vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #contenidos3{
+        text-align: center;
+        justify-content: center;
+        color: #7e0a6e;
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+        margin: auto;
+        line-height: 2em;
+        padding: 0 auto;
+    }
     .caja{
         background-color: #7e0a6e;
-        border: 6px solid #ec99e1;
+        border: 3px solid #ec99e1;
         justify-content: justify;
         text-align: center;
         border-radius: 20px;
@@ -303,28 +693,205 @@ footer{
         font-family: Verdana, sans-serif;
         font-size: 20px;
         line-height: 0;
+        margin: 0;
+        padding: auto;
+        text-align: center;    
+    }
+    h3.titulomodal{
+        color:#7e0a6e;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        font-family: Verdana, sans-serif;
+    }
+    main{
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #btnModal{
+        background-color: #ec99e1;
+        border: 3px solid #7e0a6e;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    } 
+    
+    .imagen{
+        display: flex;
+        border: 4px solid #7e0a6e;
+        border-radius: 5000px;
+        margin: auto auto;
+        padding: auto;
+        width: 30%;
+        height: auto;
+    }
+    footer{
+        background: #7e0a6e; color: #ec99e1;
+        text-align:center;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, sans-serif;
+        padding: 20px;
+        height: 80px;
+        font-size: 14px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+    body{
+        width: 90%;
+    }
+    header{
+        width: 90%;
+    }
+    h1{
+        text-align: center; color: #7e0a6e;
+        font: size 36px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: auto 50px;
+    }
+    h2{
+        text-align: center; color: #7e0a6e;
+        font: size 30px;
+        font-family: Tahoma, sans-serif;
+        margin: 50px;
+        padding: center 50px;
+    }
+    #contenidos{
+        text-align:justify; color:black;
+        line-height: 1.2;font: size 28px;
+        font-family: Tahoma, sans-serif;
+        margin: auto;
+    }
+    button{
+        font-size: 12px;
+        color: #7e0a6e;
+        border-radius: 20px;
+        background-color: #ec99e1;
+        margin: 5px;
+        padding: 3px 5px;
+        border: 2px solid #7e0a6e;
+        user-select: none;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover{
+        background-color: #3CEE36;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
         margin: auto;
         padding: auto;
         text-align: center;    
+    }
+    .contenedor{
+        width: 80%;
+        min-width: 100vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
     }
     #contenidos3{
         text-align: center;
         justify-content: center;
         color: #7e0a6e;
-        font-size: 18px;
+        font-size: 16px;
         font-family: Verdana, sans-serif;
-        margin: auto;;
-        line-height: 1.2em;
+        margin: auto;
+        line-height: 2em;
         padding: 0 auto;
     }
+    .caja{
+        background-color: #7e0a6e;
+        border: 3px solid #ec99e1;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    }
+    h6{
+        color: #fbfbfb;
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 0;
+        margin: 0;
+        padding: auto;
+        text-align: center;    
+    }
+    h3.titulomodal{
+        color:#7e0a6e;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        font-family: Verdana, sans-serif;
+    }
+    main{
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #btnModal{
+        background-color: #ec99e1;
+        border: 3px solid #7e0a6e;
+        justify-content: justify;
+        text-align: center;
+        border-radius: 20px;
+        margin: 100px auto;
+        display: flexbox; 
+        flex-flow: row wrap;
+        width: 350px;
+        height: 60px;
+        padding: auto;
+        list-style: none;
+    } 
+    
     .imagen{
         display: flex;
         border: 4px solid #7e0a6e;
-        border-radius: 2500px;
-        margin: 100px auto;
-        padding: 5px;
-        width: 35%;
+        border-radius: 5000px;
+        margin: auto auto;
+        padding: auto;
+        width: 30%;
         height: auto;
+    }
+    footer{
+        background: #7e0a6e; color: #ec99e1;
+        text-align:center;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, sans-serif;
+        padding: 20px;
+        height: 80px;
+        font-size: 14px;
     }
 }
 /* Recomendaciones! 

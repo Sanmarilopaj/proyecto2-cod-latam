@@ -10,18 +10,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="center-flex">
+	<div class="contenedor">
+  <div id="contenedor1" class="centrar-flex">
+		<p id="color">#FFFFFF</p>
+		<button id="boton-color">Cambiar Color</button>
+	</div>
     <nav>
-    <div class="navbar-contenedor contenedor">
-    <header>
+     <header>
         <img src="img/logo.png" width="80" alt="logo personal">
-            <ul class="menu-items">          
+            <ul id="menu">          
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#intereses">Intereses</a></li>
+            <li><a href="#Conocimientos">Conocimientos</a></li>
             <li><a href="#Contacto">Contacto</a></li>
             </ul>
-    </div>
     </nav>
     </header>
     <main>
@@ -35,49 +37,62 @@
         </div>
           <div id="contenidos"> 
             <p>
-                Venezolana viviendo en Buenos Aires desde hace 5 años,
-                me especialice en el área de Recursos Humanos y posteriormente 
-                me certifique como coach profesional y terapeuta integral. 
-                Desde hace 3 años decidí dedicarme al coaching de bienestar,           
+								Amplia experiencia en la gestión y administración de personal, habilidades en el
+								uso de plataformas tecnológicas y herramientas para el desarrollo de información y
+								entrenamiento. Más de 20 años de uso de distintas herramientas de
+								tecnología, sistemas administrativos y conexión a remoto.
+								Orientada a la conexión con el cliente interno y externo, integrando
+								el trabajo en equipo para alcanzar un alto desempeño.
+								Desde hace 3 años decidí dedicarme al coaching de bienestar,           
                 además realizo asesorias digitales para la publicación de podcast, 
-                gestión de redes sociales para coachs emprendedores. 
-                Me gusta adquirir nuevos conocimientos y acompañar a otras personas
-                a lograr sus objetivos.                
+                gestión de redes sociales para coachs emprendedores.
+								Me gusta brindar mis conocimientos al desarrollo y crecimiento de
+								empresas, estoy siempre abierta al aprendizaje y con buena
+								disposición al cambio. Soy una persona resiliente, creativa, flexible,
+								comprometida, con la disposición de potenciar el logro de los objetivos personales
+								y en el acompañamientos de otras personas.            
             </p> 
           </div>
+          <div id="Conocimientos">
         <section class="flex-container">
-        <div id="habilidades">
-        <div id="contenidos1"; class="caja1">
-        <h3>Habilidades</h3>
-        <ol>
-        <li>Organización</li> 
-        <li>Planificación</li>
-        <li>Observación</li>
-        <li>Creatividad</li>
-        <li>Compromiso</li>
-        <li>Trabajo en equipo</li>
-        <li>Negociación</li>
-        <li>Adaptación al cambio</li>
-        <li>Apertura al aprendizaje</li>
-        <li>Gestión de Podcast</li>
-        <li>Asesorias en RRSS</li>
-        </ol>
-        </div>
-        </div>
-        <hr>
-        <div id="intereses">
-        <div id="contenidos2"; class="caja2">
-        <h3>Intereses</h3>
-        <ol>
-        <li>Lectura</li>
-        <li>Pintar Mandalas</li>
-        <li>Desarrollo Web</li>
-        <li>Escritura creativa</li>
-        <li>Caminar</li>
-        <li>Investigar</li>
-        <li>Reposteria</li>
-        </ol>
-        </div>
+          <button id="btnModal"><h6>Conocimientos</h6></button> 
+          <div id="myModal" class="modalContainer">
+            <div class="modal-content">
+            <span class="close">×</span>
+               <div class="list">
+              <h3 class="titulomodal">Habilidades:</h3>
+                <div class="list">
+                  <ol type="square">
+                      <li>Organización</li> 
+                      <li>Planificación</li>
+                      <li>Observación</li>
+                      <li>Creatividad</li>
+                      <li>Compromiso</li>
+                      <li>Trabajo en equipo</li>
+                      <li>Negociación</li>
+                      <li>Liderazgo</li>
+                      <li>Adaptación al cambio</li>
+                      <li>Apertura al aprendizaje</li>
+                      <li>Gestión de Podcast</li>
+                      <li>Asesorias en RRSS</li>
+                      <li>Empatía e inteligencia emocional </li>
+                  </ol>
+                </div>
+        	          <h3 class="titulomodal">Tecnologías:</h3>
+	            <div class="list">
+	              <ol type="square">
+                    <li>Html5</li>
+                    <li>CCS3</li>
+                    <li>JavaScript</li>
+                    <li>Git & GitHub </li>
+                    <li>WordPress </li>
+                    <li>Sistemas Administrativos</li>
+                    <li>Office, Google, Slack, Trello, Discord,Clickup</li>
+                    <li>Plataformas Virtuales: Teachable, Thinkific,Kajabi</li>
+                    <li>Buzzsprout, Podbean</li>
+	              </ol>
+              </div>
+          </div>    
         </div>
         </section>
         <section class="caja">
@@ -114,7 +129,7 @@
 
     <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
     <!-- En este archivo escriban su HTML -->
-    </div>
+	</div>
     <script src="proye2.js"></script>
 </body>
 </html>
