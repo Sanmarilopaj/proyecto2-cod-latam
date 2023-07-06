@@ -10,8 +10,9 @@
 */
 body{
     display: block;
-    margin: 90px;
+    margin: 70px;
     padding: auto;
+    height: 100vh;
 }
 p{
     font-size: 20px;
