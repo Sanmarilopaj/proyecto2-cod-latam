@@ -83,8 +83,8 @@ button:hover{
         padding: center 50px;
     }
     #contenidos{
-        text-align:justify; color:black;
-        line-height: 1.2;font: size 28px;
+        text-align:justify; color:#7e0a6e;
+        line-height: 1;font: size 18px;
         font-family: Tahoma, sans-serif;
         margin: auto;
     }
@@ -360,19 +360,14 @@ button:hover{
 header{
     position: fixed;
     top: 0;
-    width: 10%;
+    width: 40px;
     display: flex;
-    justify-content: space-around;
-    height: 70px;
+    justify-content:space-around;
+    height: 90px;
     text-align: center; color: #7e0a6e;
     list-style: none;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 90px;
-}
+
 ul{
     position: relative;
     display: flex;
@@ -609,10 +604,10 @@ footer{
 /*nuevo css*/
 @media (max-width: 768px){
     body{
-        width: 90%;
+        width: 10vh;
     }
     header{
-        width: 90%;
+        width:90vh;
     }
     h1{
         text-align: center; color: #7e0a6e;
@@ -629,8 +624,8 @@ footer{
         padding: center 50px;
     }
     #contenidos{
-        text-align:justify; color:black;
-        line-height: 1.2;font: size 28px;
+        text-align:justify; color:#7e0a6e;
+        line-height: 1.2;font: size 18px;
         font-family: Tahoma, sans-serif;
         margin: auto;
     }
@@ -754,10 +749,10 @@ footer{
 /*desktop*/
 @media (min-width: 1024px) {
     body{
-        width: 90%;
+        width: 190vh;
     }
     header{
-        width: 90%;
+        width: 155vh;
     }
     h1{
         text-align: center; color: #7e0a6e;
@@ -774,8 +769,8 @@ footer{
         padding: center 50px;
     }
     #contenidos{
-        text-align:justify; color:black;
-        line-height: 1.2;font: size 28px;
+        text-align:justify; color:#7e0a6e;
+        line-height: 1.2;font: size 18px;
         font-family: Tahoma, sans-serif;
         margin: auto;
     }
@@ -784,8 +779,8 @@ footer{
         color: #7e0a6e;
         border-radius: 20px;
         background-color: #ec99e1;
-        margin: 5px;
-        padding: 3px 5px;
+        margin: 3px;
+        padding: 5px 3px;
         border: 2px solid #7e0a6e;
         user-select: none;
         cursor: pointer;
@@ -795,9 +790,9 @@ footer{
         background-color: #3CEE36;
     }
     h6{
-        color: #fbfbfb;
+        color: #FFFFFF;
         font-family: Verdana, sans-serif;
-        font-size: 20px;
+        font-size: 10px;
         line-height: 0;
         margin: auto;
         padding: auto;
