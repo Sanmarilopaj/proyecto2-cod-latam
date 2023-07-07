@@ -225,7 +225,7 @@ button:hover{
         padding: center 50px;
     }
     #contenidos{
-        text-align:justify; color:black;
+        text-align:justify; color:#7e0a6e;
         line-height: 1.2;font: size 28px;
         font-family: Tahoma, sans-serif;
         margin: auto;
@@ -602,9 +602,9 @@ footer{
 }
 
 /*nuevo css*/
-@media (max-width: 768px){
+@media screen and (max-width: 980px){
     body{
-        width: 10vh;
+        width: 90%;
     }
     header{
         width:90vh;
